@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Step05_YourGrind.html</title>
+	<link rel="stylesheet" href="css/your-grid.css">
+	<style>
+		
+	</style>
+</head>
+<body>
+	<h1>Grid 테스트</h1>
+	<div class="row">
+		<div class="col-xs-6">항상 50%</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6">768px 이상일때 50%</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-6 col-sm-3">50% or 25%</div>
+	</div>
+	<p id="info"></p>
+	<script src="js/jquery-3.3.1.js"></script>
+	<script>
+		$(window).on("resize", function(){
+			$(info).text(window.innerWidth);
+		});
+		$(window).ready(function(){
+			$(info).text(window.innerWidth);
+		});
+	</script>
+</body>
+</html>

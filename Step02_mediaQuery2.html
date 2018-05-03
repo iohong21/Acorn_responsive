@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Step02_mediaQuery2.html</title>
+	<style>
+		.info{
+			display: none;
+		}
+
+		.spacer{
+			height: 100px;
+			background-color: #999;
+		}
+
+		/* 
+			폭이 768px 이상일때 적용할 css를 
+			media Query 를 이용해서 정의할 수 있다 
+		*/
+		@media(min-width: 768px){
+			.info{
+				display: block;
+			}
+			.spacer{
+				height: 200px;
+				background-color: #0f0;
+			}
+		}
+		/* 폭이 992px 이상일때 적용할 css */
+		@media(min-width: 992px){
+			.spacer{
+				background-color: #f0f;
+				height: 300px;
+			}
+		}
+
+		.col{
+			float: left;
+			width: 100%;
+			height: 100px;
+			background-color: blue;
+			margin: 1% 0 0 1%;
+		}
+		@media(min-width: 600px){
+			.col{
+				width: 32%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h3>mediaQuery 테스트</h3>
+		<p class="info" id="one">
+			현재 device 의 폭은 최소 768px 이상 입니다.
+		</p>
+		<div class="spacer">
+			device 폭이 768px 을 기준으로 색상이 변합니다.
+		</div>
+	</div>
+	<div class="col">1</div>
+	<div class="col">2</div>
+	<div class="col">3</div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro tempora omnis nulla quis mollitia dicta quasi, voluptatum totam labore doloremque ea fugit consectetur itaque ab et, odio est iusto recusandae.</p>
+</body>
+</html>

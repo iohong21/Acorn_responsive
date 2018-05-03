@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/your-grid.css">
+	<title>layout1</title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		[class*="x"]{
+			text-align: center;
+			border: 1px solid red;
+		}
+		.xo {
+			width: 700px;
+		}
+		.x3, .x4 {
+			float: left;
+		}
+		.x3 {
+			width: 30%;
+		}
+		.x4 {
+			width: 70%;
+		}
+		#x5{
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<div class="x0">
+		<div class="x1">header</div>
+		<div class="x2">nav</div>
+		<div class="x3">sidebar</div>
+		<div class="x4">contents</div>
+		<div id="x5"">footer</div>
+	</div>
+</body>
+</html>
